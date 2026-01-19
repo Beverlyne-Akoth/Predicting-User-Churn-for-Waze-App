@@ -30,7 +30,7 @@ After hyper-parameter tuning, the best parameters for the RF model were;
 The overall performance of the two models on the different data sets is as follows;
 </b></b>
 * Performance
-	model	         precision	recall		F1			accuracy</b></b>
+  </br> model	         precision	recall		F1			accuracy</b></b>
 	
 0	RF1 CV			 0.452647	0.109730	0.176090	0.818860</b>
 0	XGB1 CV			 0.387959	0.149801	0.215607	0.807320</b>
