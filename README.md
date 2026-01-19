@@ -26,12 +26,12 @@ After hyper-parameter tuning, the best parameters for the RF model were;
  The model was fitted to the data using the best parameters and using recall as the refit metric, the two models had a recall score of 13% and 16% respectively on the validation dataset.
 The overall performance of the two models on the different data sets is as follows;
 </b></b>
-	model	precision	recall	F1	accuracy
-0	RF1 CV	0.452647	0.109730	0.176090	0.818860
-0	XGB1 CV	0.387959	0.149801	0.215607	0.807320
-0	RF VAL PREDS	0.540323	0.132150	0.212361	0.826224
-0	XGB VAL PREDS	0.425641	0.163708	0.236467	0.812587
-0	XGB1 TEST PREDS	0.378109	0.149901	0.214689	0.805594
+	model	precision	recall	F1	accuracy</b></b>
+0	RF1 CV	0.452647	0.109730	0.176090	0.818860</b>
+0	XGB1 CV	0.387959	0.149801	0.215607	0.807320</b>
+0	RF VAL PREDS	0.540323	0.132150	0.212361	0.826224</b>
+0	XGB VAL PREDS	0.425641	0.163708	0.236467	0.812587</b>
+0	XGB1 TEST PREDS	0.378109	0.149901	0.214689	0.805594</b>
 
 </b></b>
 The XGBoost model was chosen because it performed better than the RF model. However, neither model produced satisfactory results because the data features were limited and could not produce a robust model.
