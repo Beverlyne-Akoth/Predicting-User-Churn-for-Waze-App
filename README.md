@@ -30,8 +30,7 @@ The objective of the project is to create a machine learning model that is able 
 The overall performance of the two models on the different data sets is as follows;
 </br>
 
-  </br> model	         precision	recall		F1			accuracy</b></b>
-	
+  </br> model	         precision	recall		F1			accuracy</b>	
 </br>	RF1 CV			 0.452647	0.109730	0.176090	0.818860</b>
 </br>	XGB1 CV			 0.387959	0.149801	0.215607	0.807320</b>
 </br>	RF VAL PREDS	 0.540323	0.132150	0.212361	0.826224</b>
@@ -46,7 +45,6 @@ The XGBoost model was chosen because it performed better than the RF model. Howe
 # Recommendations
 * To improve the model, New features could be engineered to try to generate a better predictive signal, as they often do if you have domain knowledge. In the case of this model, the engineered features made up over half of the top 10 most-predictive features used by the model. It could also be helpful to reconstruct the model with different combinations of predictor variables to reduce noise from uninformative features.
 
-</br>
 * Additional features that could be used to improve model performance include the e drive-level information for each user (such as drive times, geographic locations, etc.). It would probably also be helpful to have more granular data to know how users interact with the app. For example, how often do they report or confirm road hazard alerts? Finally, it could be helpful to know the monthly count of unique starting and ending locations each driver inputs.
 
 
