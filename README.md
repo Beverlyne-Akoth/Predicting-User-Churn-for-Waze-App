@@ -7,9 +7,12 @@ The objective of the project is to create a machine learning model that is able 
 The dataset used was a CSV file that contained details on the  ID, label(churn status), sessions, drives,total_sessions,n_days_after_onboarding, total_navigations_fav1, total_navigations_fav2, driven_km_drives, duration_minutes_drives, activity_days, and driving_days of 14,999 users.      
 </b></b>
 To accomplish the task, the data was cleaned, and EDA was performed. Different features were engineered, and later on, different machine learning models were fit to the data. The models used were RandomForest and XGBoost.
+
 The data was split into training, validation, and testing sets in a 0.6:0.2:0.2 ratio, respectively.
+
 After hyper-parameter tuning, the best parameters for the RF model were;
-{'max_depth': None,
+
+* {'max_depth': None,
  'max_features': 1.0,
  'max_samples': 1.0,
  'min_samples_leaf': 2,
@@ -17,7 +20,7 @@ After hyper-parameter tuning, the best parameters for the RF model were;
  'n_estimators': 300}
  
  While the best parameters for the XGBoost model were;
- {'learning_rate': 0.1,
+ * {'learning_rate': 0.1,
  'max_depth': 12,
  'min_child_weight': 3,
  'n_estimators': 300}
@@ -26,12 +29,14 @@ After hyper-parameter tuning, the best parameters for the RF model were;
  The model was fitted to the data using the best parameters and using recall as the refit metric, the two models had a recall score of 13% and 16% respectively on the validation dataset.
 The overall performance of the two models on the different data sets is as follows;
 </b></b>
-	model	precision	recall	F1	accuracy</b></b>
-0	RF1 CV	0.452647	0.109730	0.176090	0.818860</b>
-0	XGB1 CV	0.387959	0.149801	0.215607	0.807320</b>
-0	RF VAL PREDS	0.540323	0.132150	0.212361	0.826224</b>
-0	XGB VAL PREDS	0.425641	0.163708	0.236467	0.812587</b>
-0	XGB1 TEST PREDS	0.378109	0.149901	0.214689	0.805594</b>
+* Performance
+	model	         precision	recall		F1			accuracy</b></b>
+	
+0	RF1 CV			 0.452647	0.109730	0.176090	0.818860</b>
+0	XGB1 CV			 0.387959	0.149801	0.215607	0.807320</b>
+0	RF VAL PREDS	 0.540323	0.132150	0.212361	0.826224</b>
+0	XGB VAL PREDS	 0.425641	0.163708	0.236467	0.812587</b>
+0	XGB1 TEST PREDS	 0.378109	0.149901	0.214689	0.805594</b>
 
 </b></b>
 The XGBoost model was chosen because it performed better than the RF model. However, neither model produced satisfactory results because the data features were limited and could not produce a robust model.
