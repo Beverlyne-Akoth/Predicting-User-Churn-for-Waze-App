@@ -33,7 +33,7 @@ The overall performance of the two models on the different data sets is as follo
 0	XGB VAL PREDS	0.425641	0.163708	0.236467	0.812587
 0	XGB1 TEST PREDS	0.378109	0.149901	0.214689	0.805594
 
-</b>
+</b></b>
 The XGBoost model was chosen because it performed better than the RF model. However, neither model produced satisfactory results because the data features were limited and could not produce a robust model.
 </b>
 The strongest features were km_per_hour, n_days_after_onboarding, percent_sessions_in_last_month, and duration_minute_drives, all which had been feature engineered.
